@@ -40,4 +40,4 @@ To release:
 1. Raise `version` in `package.json` and commit.
 2. Push a matching tag, e.g. `git tag v0.2.0 && git push origin v0.2.0`.
 
-The workflow checks that the tag matches the version and publishes a GitHub release with the `.vsix` attached. Installed copies find that release with their update check.
+The workflow checks that the tag matches the version and publishes a GitHub release with the `.vsix` attached. If you create the release in the GitHub UI instead (with a new tag `vX.Y.Z`), the workflow only attaches the `.vsix` to it. Installed copies find that release with their update check.
